@@ -1,0 +1,9 @@
+data/System/LightboxPlugin.txt 	        0644  plugin description
+lib/Foswiki/Plugins/LightboxPlugin.pm 	0644  plugin perl code
+pub/System/LightboxPlugin/lightbox.css 	0644  stylesheet
+pub/System/LightboxPlugin/lightbox.js 	0644  javascript
+pub/System/LightboxPlugin/blank.gif 	0644  close image button
+pub/System/LightboxPlugin/close.gif 	0644  close image button
+pub/System/LightboxPlugin/loading.gif 	0644  image loading animation
+pub/System/LightboxPlugin/overlay.png 	0644  overlay image
+pub/System/LightboxPlugin/ScreenShot001.jpg  0644  thumbnail example
