@@ -1,0 +1,101 @@
+
+---+ Lightbox Plugin
+
+[[http://www.huddletogether.com/projects/lightbox/][Lightbox]] is set of
+Javascript and CSS files that provides improved image viewing
+functionality. When a user clicks on the image, the full size image will
+display _without_ advancing the browser to a new page.
+
+---++ Usage
+
+   * Attach images and thumbnails to a topic
+   * Use one of the lightbox Foswiki tags to display the thumbnail image.  
+
+---+++ Syntax
+
+To add lightbox functionality to a Foswiki topic, use 
+
+<verbatim>
+   %LIGHTBOX{ _options_ }%
+</verbatim>
+or 
+<verbatim>
+   %BEGINLIGHTBOX{ _options_ }%
+   _text_
+   %ENDLIGHTBOX%
+</verbatim>
+
+If successful, a dotted box with a clickable thumbnail should appear.
+
+
+| *option* | *default* | *comments* |
+| image | '' | The large display image   |
+| thumbnail | '' | The click-able thumbnail image   |
+| float | 'right' | thumbnail placement on topic page   |
+| border |  _see below_  | thumbnail border style    |
+| caption | '' | caption to appear in thumbnail img alt tag and under large image |
+
+Note, Foswiki-wide defaults can be set using
+   * <nop>Set LIGHTBOXPLUGIN_BORDER = 1px dashed #22638C
+   * <nop>Set LIGHTBOXPLUGIN_FLOAT = 
+
+
+   * %I% If your text is to short, the thumbnail will overlap use height to fix this.
+<verbatim>
+   <div style="border:1px dashed #22638c;padding:4px;height:200px; ">
+</verbatim>
+
+---+++ Example
+
+<verbatim>
+%LIGHTBOX{ image="img-test.jpg"  thumbnail="tmb-test.jpg" caption="This is a test"}%
+</verbatim>
+
+
+---++ Plugin Installation Instructions
+
+__Note:__ You do not need to install anything on the browser to use this plugin. The following instructions are for the administrator who installs the plugin on the server where Foswiki is running. 
+
+   * Download the ZIP file from the Plugin Home (see below)
+   * Unzip ==LightboxPlugin.zip== in the root of your Foswiki installation %BR% Content:
+     | *File:* | *Description:* |
+     | ==data/System/LightboxPlugin.txt== | plugin description |
+     | ==lib/Foswiki/Plugins/LightboxPlugin.pm== | plugin perl code |
+     | ==pub/System/LightboxPlugin/lightbox.css== | stylesheet |
+     | ==pub/System/LightboxPlugin/lightbox.js== | javascript |
+     | ==pub/System/LightboxPlugin/blank.gif== | empty image   |
+     | ==pub/System/LightboxPlugin/close.gif== | close image button  |
+     | ==pub/System/LightboxPlugin/loading.gif== | image loading animation |
+     | ==pub/System/LightboxPlugin/overlay.png== | overlay image |
+     | ==pub/System/LightboxPlugin/ScreenShot001.jpg== | thumbnail example |
+   * Enable the plugin in =configure= or =LocalSite.cfg=
+   * Test if the installation was successful:
+      * A dotted box with a clickable thumbnail should appear. <BR>
+   <img src="%ATTACHURLPATH%/ScreenShot001.jpg" alt="ScreenShot001.jpg" width='545' height='189' />
+
+---++ Plugin Info
+
+   * Set SHORTDESCRIPTION = Foswiki hooks to the Lightbox Javascript package for better thumbnail click-through
+
+This Foswiki extension includes v1.0 of Lightbox.
+
+|  Plugin Author: | TWiki:Main.HenriAanstoot, Foswiki:Main.ScottHoge |
+|  Copyright: | &copy; 2006, TWiki:Main.HenriAanstoot |
+|  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
+|  Plugin Version: | 5 Apr 2007 (%$VERSION%) |
+|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|   7 Oct 2009: | ported to Foswiki codebase |
+|   5 Apr 2007: | Added blank.gif to the package |
+|  23 Mar 2007: | Added Plugin code with TWiki Tags |
+|  22 Sep 2006: | Initial version |
+|  Foswiki Dependency: | $Foswiki::Plugins::VERSION 1.1 (Foswiki 1.0.x) |
+|  CPAN Dependencies: | none |
+|  Other Dependencies: | none |
+|  Perl Version: | 5.005 |
+|  Plugin Home: | http://foswiki.org/Extensions/%TOPIC% |
+|  Feedback: | http://foswiki.org/Extensions/%TOPIC%Dev |
+|  Appraisal: | http://foswiki.org/Extensions/%TOPIC%Appraisal |
+
+__Related Topic:__ Foswiki:Extensions.ImageGalleryPlugin
+
+Contributors: TWiki:Main/HenriAanstoot, Foswiki:Main/ScottHoge
