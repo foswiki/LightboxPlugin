@@ -49,7 +49,7 @@ $VERSION = '$Rev: 9813$';
 $RELEASE = 'Oct 2009';
 
 # Name of this Plugin, only used in this module
-$pluginName = 'EmptyPlugin';
+$pluginName = 'LightboxPlugin';
 
 =pod
 

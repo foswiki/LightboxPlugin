@@ -75,16 +75,16 @@ __Note:__ You do not need to install anything on the browser to use this plugin.
 
 ---++ Plugin Info
 
-   * Set SHORTDESCRIPTION = Foswiki hooks to the Lightbox Javascript package for better thumbnail click-through
+   * Set SHORTDESCRIPTION = Foswiki hooks to the Lightbox Javascript package for better thumbnail image click-through
 
 This Foswiki extension includes v1.0 of Lightbox.
 
 |  Plugin Author: | TWiki:Main.HenriAanstoot, Foswiki:Main.ScottHoge |
 |  Copyright: | &copy; 2006, TWiki:Main.HenriAanstoot |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
-|  Plugin Version: | 5 Apr 2007 (%$VERSION%) |
+|  Plugin Version: | 8 Oct 2009 (%$VERSION%) |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
-|   7 Oct 2009: | ported to Foswiki codebase |
+|   8 Oct 2009: | ported to Foswiki codebase |
 |   5 Apr 2007: | Added blank.gif to the package |
 |  23 Mar 2007: | Added Plugin code with TWiki Tags |
 |  22 Sep 2006: | Initial version |
@@ -93,8 +93,7 @@ This Foswiki extension includes v1.0 of Lightbox.
 |  Other Dependencies: | none |
 |  Perl Version: | 5.005 |
 |  Plugin Home: | http://foswiki.org/Extensions/%TOPIC% |
-|  Feedback: | http://foswiki.org/Extensions/%TOPIC%Dev |
-|  Appraisal: | http://foswiki.org/Extensions/%TOPIC%Appraisal |
+|  Feedback: | http://foswiki.org/Support/%TOPIC% |
 
 __Related Topic:__ Foswiki:Extensions.ImageGalleryPlugin
 
