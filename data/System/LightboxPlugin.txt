@@ -6,6 +6,8 @@ Javascript and CSS files that provides improved image viewing
 functionality. When a user clicks on the image, the full size image will
 display _without_ advancing the browser to a new page.
 
+%X% On recent Foswiki installations (>=1.1.x) the functionality of this plugin is replaced with %SYSTEMWEB%.JQueryPlugin.JQuerySlimbox. The Lightbox Plugin will only properly initialize if TWiki Plugin Version <1.2, so if you still want or have to use it, then you also must enable the %SYSTEMWEB%.TWikiCompatibilityPlugin.
+
 ---++ Usage
 
    * Attach images and thumbnails to a topic
@@ -84,7 +86,8 @@ This Foswiki extension includes v1.0 of Lightbox.
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
 |  Plugin Version: | 8 Oct 2009 (%$VERSION%) |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
-|   8 Oct 2009: | ported to Foswiki codebase |
+|  25 Nov 2010: | Documented alternative usage of !JQuerySlimbox and base requirements on a recent Foswiki |
+|   8 Oct 2009: | Ported to Foswiki codebase |
 |   5 Apr 2007: | Added blank.gif to the package |
 |  23 Mar 2007: | Added Plugin code with TWiki Tags |
 |  22 Sep 2006: | Initial version |

@@ -46,7 +46,7 @@ $VERSION = '$Rev: 9813$';
 # This is a free-form string you can use to "name" your own plugin version.
 # It is *not* used by the build automation tools, but is reported as part
 # of the version number in PLUGINDESCRIPTIONS.
-$RELEASE = 'Oct 2009';
+$RELEASE = 'Nov 2010';
 
 # Name of this Plugin, only used in this module
 $pluginName = 'LightboxPlugin';
