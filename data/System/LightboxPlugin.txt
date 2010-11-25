@@ -84,7 +84,7 @@ This Foswiki extension includes v1.0 of Lightbox.
 |  Plugin Author: | TWiki:Main.HenriAanstoot, Foswiki:Main.ScottHoge |
 |  Copyright: | &copy; 2006, TWiki:Main.HenriAanstoot |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
-|  Plugin Version: | 8 Oct 2009 (%$VERSION%) |
+|  Plugin Version: | 25 Nov 2010 (%$VERSION%) |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
 |  25 Nov 2010: | Documented alternative usage of !JQuerySlimbox and base requirements on a recent Foswiki |
 |   8 Oct 2009: | Ported to Foswiki codebase |
