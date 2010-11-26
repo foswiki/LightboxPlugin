@@ -1,24 +1,4 @@
-# Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
-#
-# ported from TWiki in Oct 2009, W. Scott Hoge 
-#
-# Copyright (C) 2000-2003 Andrea Sterbini, a.sterbini@flashnet.it
-# Copyright (C) 2001-2006 Peter Thoeny, peter@thoeny.org
-# and TWiki Contributors. All Rights Reserved. TWiki Contributors
-# are listed in the AUTHORS file in the root of this distribution.
-# NOTE: Please extend that file, not this notice.
-#
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version. For
-# more details read LICENSE in the root of this distribution.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-#
-# For licensing info read LICENSE file in the TWiki root.
+# See bottom of file for default license and copyright information
 
 =pod
 
@@ -38,15 +18,23 @@ use strict;
 # *must* exist in this package
 use vars qw( $VERSION $RELEASE $debug $pluginName $debug %default);
 
-# This should always be $Rev: 9813$ so that Foswiki can determine the checked-in
-# status of the plugin. It is used by the build automation tools, so
-# you should leave it alone.
-$VERSION = '$Rev: 9813$';
+# $VERSION is referred to by Foswiki, and is the only global variable that
+# *must* exist in this package. This should always be in the format
+# $Rev: 9771 $ so that Foswiki can determine the checked-in status of the
+# extension.
+our $VERSION = '$Rev: 9813 $';
 
-# This is a free-form string you can use to "name" your own plugin version.
-# It is *not* used by the build automation tools, but is reported as part
-# of the version number in PLUGINDESCRIPTIONS.
-$RELEASE = 'Nov 2010';
+# $RELEASE is used in the "Find More Extensions" automation in configure.
+# It is a manually maintained string used to identify functionality steps.
+# You can use any of the following formats:
+# tuple   - a sequence of integers separated by . e.g. 1.2.3. The numbers
+#           usually refer to major.minor.patch release or similar. You can
+#           use as many numbers as you like e.g. '1' or '1.2.3.4.5'.
+# isodate - a date in ISO8601 format e.g. 2009-08-07
+# date    - a date in 1 Jun 2009 format. Three letter English month names only.
+# Note: it's important that this string is exactly the same in the extension
+# topic - if you use %$RELEASE% with BuildContrib this is done automatically.
+our $RELEASE = '26 Nov 2010';
 
 # Name of this Plugin, only used in this module
 $pluginName = 'LightboxPlugin';
@@ -183,3 +171,28 @@ sub handleLightBox {
 }
 
 1;
+
+__END__
+Foswiki - The Free and Open Source Wiki, http://foswiki.org/
+
+ported from TWiki in Oct 2009, W. Scott Hoge
+
+Copyright (C) 2000-2003 Andrea Sterbini, a.sterbini@flashnet.it
+Copyright (C) 2001-2006 Peter Thoeny, peter@thoeny.org
+and TWiki Contributors. All Rights Reserved. TWiki Contributors
+are listed in the AUTHORS file in the root of this distribution.
+Copyright (C) 2008-2010 Foswiki Contributors. Foswiki Contributors
+are listed in the AUTHORS file in the root of this distribution.
+NOTE: Please extend that file, not this notice.
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version. For
+more details read LICENSE in the root of this distribution.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+As per the GPL, removal of this notice is prohibited.
